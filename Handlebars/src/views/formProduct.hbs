@@ -1,0 +1,22 @@
+<div style="display: flex; justify-content: flex-end">
+  <a type="button" href="/productos" class="btn btn-primary btn-lg m-2 p-2">
+  ver productos
+  </a>
+</div>
+<form class="row g-3" style="padding-left : 30rem; padding-right:30rem" action="/productos" method="POST" >
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="Escribe el titulo aqui">
+    </div>
+    <div class="mb-3">
+         <label for="price" class="form-label">Precio</label>
+        <input type="number" class="form-control" name="price" id="price" placeholder="Ingresa el precio del producto" step="0.01" min="0"/>
+    </div>
+    <div class="mb-3">
+        <label for="thumbnail" class="form-label">Thumbnail</label>
+        <input type="text" class="form-control" id="thumbnail" name="thumbnail" placeholder="Escribe la url de la imagen aqui">
+    </div>
+    <div class="col-12">
+    <button class="btn btn-primary" type="submit">Crear producto</button>
+    </div>
+</form>
